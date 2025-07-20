@@ -1,0 +1,620 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #d1d5db;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #161b22;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #0073ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 17px;
+}
+
+nav ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3b82f6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 120px 10px 60px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  max-width: 600px;
+  text-align: left;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  color: #007bff; /* blue highlight for name */
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #aaa;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.hero-text .name-highlight {
+  color: #007bff; /* Blue highlight */
+}
+
+.hero-text .tagline {
+  font-size: 18px;
+  font-weight: 500;
+  color: #cccccc;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+}
+
+
+.hero-text h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #9ca3af;
+}
+
+button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 15px #0066ff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0052cc;
+  box-shadow: 0 0 25px #3385ff;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #0062ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(0, 98, 255);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #0000ff;
+  transform: scale(1.08);
+  box-shadow: #000000 50px rgb(18, 20, )
+}
+
+.btn.primary {
+  background: #0055ff;
+  color: #fff;
+  box-shadow: #003cff;
+}
+
+
+.btn.primary:hover {
+  background: #0055ff;
+  box-shadow: #0000;
+}
+
+.btn.secondary {
+  border: 5px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.btn.secondary:hover {
+  background: #1f2937;
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 250px;
+  border-radius: 15%;
+}
+
+/* About Section */
+.about {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about p {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stats div {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Projects */
+.projects {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project {
+  background: #161b22;
+  padding: 40px;
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-20px);
+}
+
+/* Contact */
+.contact {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #161b22;
+}
+
+  .hero .btn {
+    display: block;
+    margin: 30px auto;
+  }
+@media (max-width: 10px) {
+  .hero .btn {
+    display: block;
+    margin: 5px auto;
+  }
+
+  .hero img {
+    margin-top: 30px;
+  }
+}
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+.image-wrapper {
+  width: fit-content;
+  padding: 9px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, red, orange, yellow, lime, cyan, blue, violet, red);
+  background-size: 350% 350%;
+  animation: rainbowBorder 6s linear infinite;
+  box-shadow: 0 0 30px rgb(0, 85, 255), 0 0 45px rgba(0, 0, 0, 0.749);
+  margin-top: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgb(1, 16, 110);
+}
+
+.image-wrapper img {
+  display: block;
+  border-radius: 20px;
+  width: 240px;
+  height: 380px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+@keyframes rainbowBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.follow-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* gradient color */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif; /* clean modern font */
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #00aaff);
+  box-shadow: 0 0 25px rgba(0, 174, 255, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
+.follow-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.follow-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, red, blue, rgb(106, 0, 255), cyan, magenta, red);
+  background-size: 400%;
+  animation: animateRGB 5s linear infinite;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.follow-btn:hover {
+  color: #fff;
+}
+
+@keyframes animateRGB {}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+ .social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-buttons a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.social-buttons a:hover::before {
+  opacity: 1;
+}
+
+/* Button-specific colors */
+.youtube {
+  background-color: #ffffff;
+}
+
+.tiktok {
+  background-color: #000000;
+}
+
+.whatsapp {
+  background-color: #25d366;
+  box-shadow: 0 0 10px #25D366, 0 0 20px #25D366, 0 0 30px #25D366;
+
+}
+
+.social-buttons a:hover {
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Icon animation */
+.social-buttons i {
+  transition: transform 0.3s ease;
+}
+
+.social-buttons a:hover i {
+  transform: scale(1.3);
+}
+.follow-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.follow-btn {
+    animation: pulse 2s infinite; /* අනන්තවත් පල්ස් කරයි */
+}
+.follow-btn {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    transition: background 0.5s ease;
+}
+
+.follow-btn:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+/* පොදු බොත්තම් ස්ථිල */
+.social-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 1. YouTube (Shake + Red Pulse) */
+.youtube-btn {
+  background: #FF0000;
+}
+
+.youtube-btn:hover {
+  animation: youtubeShake 0.5s ease infinite alternate;
+  box-shadow: 0 0 30px #ff0000;
+}
+
+@keyframes youtubeShake {
+  0% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+/* 2. TikTok (Gradient + Neon Wave) */
+.tiktok-btn {
+  background: linear-gradient(45deg, #000000);
+  position: relative;
+  overflow: hidden;
+}
+
+.tiktok-btn:hover {
+  animation: tiktokWave 1.5s linear infinite;
+}
+
+@keyframes tiktokWave {
+  0% { box-shadow: 0 0 10px #000000; }
+  50% { box-shadow: 0 0 15px #ffffff; }
+  100% { box-shadow: 0 0 10px #000000; }
+}
+
+/* 3. WhatsApp (Bounce + Green Pulse) */
+.whatsapp-btn {
+  background: #25D366;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.whatsapp-btn:hover {
+  animation: whatsappBounce 0.4s ease infinite alternate;
+}
+
+
+@keyframes whatsappBounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.social-btn i {
+  margin-right: 10px;
+}
+
+/* Brand Colors */
+.youtube {
+  background: #ff0000;
+}
+.tiktok {
+  background: #000000;
+}
+.whatsapp {
+  background: #25d366;
+}
+
+/* Hover Glow Effect */
+.social-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.4);
+}
+.social-btn.youtube {
+  background-color: #FF0000;
+}
+
+.social-btn.youtube:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+.social-btn.tiktok {
+  background-color: #000;
+}
+
+.social-btn.tiktok:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+.social-btn.whatsapp {
+  background-color: #25D366;
+}
+
+.social-btn.whatsapp:hover {
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.7);
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-25deg); }
+  75% { transform: rotate(25deg); }
+}
+
+.social-btn:hover i {
+   animation: wiggle 0.5s ease-in-out;
+}
